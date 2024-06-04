@@ -1,10 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 const MainScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.label}>Scrieti Aici</Text>
+      <Button
+        title='Inregistra'
+      />
+
       <TextInput
         style={styles.textInput}
         multiline={true}
@@ -25,12 +29,16 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   textInput: {
-    height: 100,
+    marginTop: 10,
+    height: 250,
     borderColor: 'gray',
     borderWidth: 1,
     padding: 10,
     textAlignVertical: 'top', // Ensures text aligns to the top
   },
+  button: {
+    marginTop: 50
+  }
 });
 
 export default MainScreen;
