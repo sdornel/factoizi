@@ -1,7 +1,7 @@
 In aceastǎ applicație creez abilitate sǎ scrie lucruri interesant.
 
 nu uit sǎ creezi o optiune sǎ înregistra facturile
-creezi o optiune sǎ vǎd historia
+creezi o optiune sǎ vǎd istoria
 
 # Welcome to your Expo app 👋
 
