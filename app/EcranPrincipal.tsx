@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const MainScreen = () => {
+const EcranPrincipal = () => {
   const salvațiTextul = () => {
 
   }
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MainScreen;
+export default EcranPrincipal;

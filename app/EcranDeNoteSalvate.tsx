@@ -1,10 +1,11 @@
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 
-const SavedNotesScreen = () => {
+const EcranDeNoteSalvate = () => {
     return (
       <View style={styles.container}>
         {/* scroll down and each tab is a "category" */}
         {/* in each category have another screen with a for loop for note components */}
+        
       </View>
     );
   };
@@ -17,4 +18,4 @@ const SavedNotesScreen = () => {
     },
   });
   
-  export default SavedNotesScreen;
+  export default EcranDeNoteSalvate;
