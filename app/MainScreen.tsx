@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     padding: 10,
-    textAlignVertical: 'top', // Ensures text aligns to the top
+    textAlignVertical: 'top',
   },
   button: {
     marginTop: 50
