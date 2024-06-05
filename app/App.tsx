@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import MainScreen from './MainScreen';
+import EcranPrincipal from './EcranPrincipal';
+import EcranDeNoteSalvate from './EcranDeNoteSalvate';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <MainScreen />
+      <EcranDeNoteSalvate />
+      <EcranPrincipal />
     </View>
   );
 };
