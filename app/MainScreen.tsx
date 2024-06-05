@@ -3,13 +3,13 @@ import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const MainScreen = () => {
-  const salvatiTextul = () => {
+  const salvațiTextul = () => {
 
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Scrieti Aici</Text>
+      <Text style={styles.label}>Scrieți Aici</Text>
       <Button
         title='Inregistra'
         onPress={salvatiTextul}
