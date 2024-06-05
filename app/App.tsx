@@ -6,8 +6,11 @@ import EcranDeNoteSalvate from './EcranDeNoteSalvate';
 const App = () => {
   // add button to toggle which component renders
   return (
-    <Button></Button>
     <View style={styles.container}>
+      <Button 
+        title='Comutați vizualizarea'
+        onPress={() => {}}
+      />
       <EcranDeNoteSalvate />
       <EcranPrincipal />
     </View>
