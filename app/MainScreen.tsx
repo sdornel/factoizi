@@ -12,7 +12,7 @@ const MainScreen = () => {
       <Text style={styles.label}>Scrieți Aici</Text>
       <Button
         title='Inregistra'
-        onPress={salvatiTextul}
+        onPress={salvațiTextul}
       />
 
       <TextInput
