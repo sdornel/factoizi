@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const EcranPrincipal = () => {
@@ -10,10 +10,12 @@ const EcranPrincipal = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.label}>Scrieți Aici</Text>
-      <Button
-        title='Inregistra'
+      <Pressable
         onPress={salvațiTextul}
-      />
+        style={styles.button}
+      >
+        <Text style={styles.buttonText}>Înregistra</Text>
+      </ Pressable>
 
       <TextInput
         style={styles.textInput}
@@ -40,11 +42,21 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     padding: 10,
-    textAlignVertical: 'top',
+    verticalAlign: 'top',
   },
   button: {
-    marginTop: 50
-  }
+    backgroundColor: '#2196F3',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: 'center',
+    marginTop: 50,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
 
 export default EcranPrincipal;
