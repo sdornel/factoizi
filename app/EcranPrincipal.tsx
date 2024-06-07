@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 5,
     alignItems: 'center',
-    marginTop: 50,
+    marginTop: 10,
   },
   buttonText: {
     color: 'white',
