@@ -1,10 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Nota from '../componente/Nota';
-import { useNavigation } from 'expo-router';
+import { useGlobalSearchParams, useLocalSearchParams, useNavigation } from 'expo-router';
 
-const Fisier = ({ route }: { route: { params: String; }}) => {
+const Dosar = ({ route }: { route: { params: String; }}) => {
   const navigation = useNavigation();
+  const { localMessage } = useLocalSearchParams();
+  const { globalMessage } = useGlobalSearchParams();
+
   const subiect = route.params;
 
   return (
@@ -23,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Fisier;
+export default Dosar;
