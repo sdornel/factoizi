@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Nota from '../componente/Nota';
-import { useNavigation } from 'expo-router';
 
 const Fisier = ({ route }: { route: { params: String; }}) => {
-  const navigation = useNavigation();
   const subiect = route.params;
 
   return (
