@@ -15,6 +15,7 @@
 // }
 import React from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import 'expo-router/entry';
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const index = () => {

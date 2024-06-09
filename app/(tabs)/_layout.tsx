@@ -29,6 +29,14 @@ export default function TabLayout() {
           ),
         }}
       />
+
+{/* <Stack.Screen
+        name="Dosar"
+        options={{
+          headerShown: true,
+          title: 'Dosar',
+        }}
+      /> */}
     </Tabs>
   );
 }
