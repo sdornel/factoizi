@@ -10,23 +10,23 @@ const EcranDeNoteSalvate = () => {
   const router = useRouter();
 
   const naviga = (subiect: string) => {
-    // navigation.navigate('Dosar', { subiect });
-    router.push({ pathname: '/Dosar', params: { subiect } });
+    router.push({ pathname: '/containere/Dosar', params: { subiect } });
   };
 
   return (
+    // in future need to have a better format of containers
     <View style={styles.container}>
-      {/* <Pressable onPress={() => naviga('programare')}><Text>programare</Text></Pressable>
-      <Pressable onPress={() => naviga('istorie')}><Text>istorie</Text></Pressable> */}
       <Text>This is the saved notes screen.</Text>
       <Button
-        title="Go to Dosar with Note1"
-        onPress={() => naviga('Note1')}
+        title="Programare"
+        onPress={() => naviga('Programare')}
       />
+      <View style={styles.distanțier}></View>
       <Button
         title="Go to Dosar with Note2"
         onPress={() => naviga('Note2')}
       />
+      <View style={styles.distanțier}></View>
       <Button
         title="Go to Dosar with Note3"
         onPress={() => naviga('Note3')}
@@ -41,6 +41,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  distanțier: {
+    marginTop: 10
+  }
 });
 
 export default EcranDeNoteSalvate;
