@@ -4,13 +4,13 @@ export default function Layout() {
   return (
     <Stack>
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> 
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Dosar"
         options={{
           headerShown: true,
           title: 'Dosar',
         }}
-      /> */}
+      />
     </Stack>
   );
 }
