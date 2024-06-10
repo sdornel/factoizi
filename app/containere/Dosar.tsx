@@ -1,14 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Nota from '../componente/Nota';
-import { useGlobalSearchParams, useLocalSearchParams, useNavigation } from 'expo-router';
+import { useRoute } from '@react-navigation/native';
 
-const Dosar = ({ route }: { route: { params: String; }}) => {
-  const navigation = useNavigation();
-  const { localMessage } = useLocalSearchParams();
-  const { globalMessage } = useGlobalSearchParams();
-
-  const subiect = route.params;
+const Dosar = () => {
+  const route = useRoute();
+  const { subiect } = route.params as { subiect: string; }; // i should try to do this more nicely in future
 
   return (
     <View style={styles.container}>
