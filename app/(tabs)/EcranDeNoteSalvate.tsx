@@ -14,7 +14,7 @@ const EcranDeNoteSalvate = () => {
   };
 
   return (
-    // in future need to have a better format of containers
+    // in future need to have a better format for containers
     <View style={styles.container}>
       <Text>This is the saved notes screen.</Text>
       <Button
