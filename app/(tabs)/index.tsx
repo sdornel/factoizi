@@ -4,7 +4,7 @@ import 'expo-router/entry';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const index = () => {
-  const salvațiTextul = (event: GestureResponderEvent) => {
+  const salvațiTextul = (eveniment: GestureResponderEvent) => {
 
   }
 
