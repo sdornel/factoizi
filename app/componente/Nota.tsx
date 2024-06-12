@@ -1,7 +1,7 @@
 import { useNavigation } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
 
-const Nota = () => {
+const Nota = (props: any) => {
   const navigation = useNavigation();
     return (
       <View>
