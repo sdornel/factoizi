@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const index = () => {
   const salvațiTextul = (eveniment: GestureResponderEvent) => {
-
+    console.log('eveniment', eveniment);
   }
 
   return (
