@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GestureResponderEvent, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import 'expo-router/entry';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const index = () => {
-  const salvațiTextul = (eveniment: GestureResponderEvent) => {
-    console.log('eveniment', eveniment);
+  const [text, setText] = useState('');
+
+  const salvațiTextul = () => {
+    console.log('text input:', text);
   }
 
   return (
     <View style={styles.container}>
       <Text style={styles.label}>Scrieți Aici</Text>
       <Pressable
-        onPress={(e) => salvațiTextul(e)}
+        onPress={(e) => salvațiTextul()}
         style={styles.button}
       >
         <Text style={styles.buttonText}>Înregistra</Text>
@@ -22,6 +24,8 @@ const index = () => {
         style={styles.textInput}
         multiline={true}
         numberOfLines={4}
+        onChangeText={setText}
+        value={text}
       />
     </View>
   );
