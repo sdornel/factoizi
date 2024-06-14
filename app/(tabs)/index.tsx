@@ -5,9 +5,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const index = () => {
   const [text, setText] = useState('');
+  const [subiect, setSubiect] = useState('');
 
   const salvațiTextul = () => {
     console.log('text input:', text);
+    // AsyncStorage.setItem('', text);
   }
 
   return (
@@ -19,7 +21,12 @@ const index = () => {
       >
         <Text style={styles.buttonText}>Înregistra</Text>
       </ Pressable>
-
+      <TextInput
+        style={styles.textInput}
+        multiline={false}
+        onChangeText={setSubiect}
+        value={subiect}
+      />
       <TextInput
         style={styles.textInput}
         multiline={true}
