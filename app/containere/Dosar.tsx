@@ -10,6 +10,9 @@ const Dosar = () => {
   return (
     <View style={styles.container}>
       <Text>Detail Screen for {subiect}</Text>
+      {
+        // loop with asyncstorage and nota
+      }
       <Nota props={''}/>
     </View>
   );
