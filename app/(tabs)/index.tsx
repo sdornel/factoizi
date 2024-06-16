@@ -6,7 +6,12 @@ import ScapaJos from '../componente/ScapaJos';
 
 const index = () => {
   const [text, setText] = useState('');
-  const [subiect, setSubiect] = useState('');
+  const [subiectulAles, setSubiectulAles] = useState('');
+  const subiecti = [
+    'programare',
+    'istorie',
+    'alt',
+  ];
 
   const salvațiTextul = () => {
     console.log('text input:', text);
@@ -28,7 +33,7 @@ const index = () => {
         onChangeText={setSubiect}
         value={subiect}
       /> */}
-      <ScapaJos />
+      <ScapaJos subiecti={subiecti} setSubiectulAles={setSubiectulAles} />
       <TextInput
         style={styles.textInput}
         multiline={true}

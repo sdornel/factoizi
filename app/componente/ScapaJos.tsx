@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import {
   View,
   Text,
@@ -8,7 +8,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-const ScapaJos = ({ items, selectedValue, onValueChange }) => {
+const ScapaJos = ({ subiecti, setSubiectulAles }: { subiecti: Array<string>; setSubiectulAles: Dispatch<SetStateAction<string>>; }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleSelect = (item) => {
