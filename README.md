@@ -3,6 +3,8 @@ In aceastǎ applicație creez abilitate sǎ scrie lucruri interesant.
 nu uit sǎ creezi o optiune sǎ înregistra facturile
 creezi o optiune sǎ vǎd istoria
 
+add dropdown
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
