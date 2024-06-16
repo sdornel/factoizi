@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GestureResponderEvent, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import 'expo-router/entry';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import ScapaJos from '../componente/ScapaJos';
 
 const index = () => {
   const [text, setText] = useState('');
@@ -21,12 +22,13 @@ const index = () => {
       >
         <Text style={styles.buttonText}>Înregistra</Text>
       </ Pressable>
-      <TextInput
+      {/* <TextInput
         style={styles.textInput}
         multiline={false}
         onChangeText={setSubiect}
         value={subiect}
-      />
+      /> */}
+      <ScapaJos />
       <TextInput
         style={styles.textInput}
         multiline={true}
