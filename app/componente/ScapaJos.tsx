@@ -8,11 +8,11 @@ import {
   StyleSheet,
 } from 'react-native';
 
-const ScapaJos = ({ subiecti, setSubiectulAles }: { subiecti: Array<string>; setSubiectulAles: Dispatch<SetStateAction<string>>; }) => {
+const ScapaJos = ({ subiecti, subiectulAles, setSubiectulAles }: { subiecti: Array<string>; subiectulAles: string; setSubiectulAles: Dispatch<SetStateAction<string>>; }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleSelect = (item) => {
-    onValueChange(item.value);
+    // onValueChange(item.value);
     setIsVisible(false);
   };
 
@@ -23,7 +23,7 @@ const ScapaJos = ({ subiecti, setSubiectulAles }: { subiecti: Array<string>; set
         onPress={() => setIsVisible(true)}
       >
         <Text style={styles.dropdownButtonText}>
-          {selectedValue ? selectedValue : 'Select an option'}
+          {subiectulAles ? subiectulAles : 'Selectati o optiune'}
         </Text>
       </TouchableOpacity>
       <Modal transparent={true} visible={isVisible} animationType="slide">
@@ -33,14 +33,15 @@ const ScapaJos = ({ subiecti, setSubiectulAles }: { subiecti: Array<string>; set
         >
           <View style={styles.dropdown}>
             <FlatList
-              data={items}
-              keyExtractor={(item) => item.value}
+              data={subiecti}
+              // keyExtractor={(item) => item.value}
               renderItem={({ item }) => (
                 <TouchableOpacity
                   style={styles.dropdownItem}
                   onPress={() => handleSelect(item)}
                 >
-                  <Text style={styles.dropdownItemText}>{item.label}</Text>
+                  {/* <Text style={styles.dropdownItemText}>{item.label}</Text> */}
+                  <Text style={styles.dropdownItemText}>{item}</Text>
                 </TouchableOpacity>
               )}
             />
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
   },
   dropdown: {
     width: '80%',
-    maxHeight: 200,
+    maxHeight: 300,
     backgroundColor: 'white',
     borderRadius: 4,
     overflow: 'hidden',

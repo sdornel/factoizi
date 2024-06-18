@@ -11,6 +11,19 @@ const index = () => {
     'programare',
     'istorie',
     'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
+    'alt',
   ];
 
   const salvațiTextul = () => {
@@ -33,7 +46,7 @@ const index = () => {
         onChangeText={setSubiect}
         value={subiect}
       /> */}
-      <ScapaJos subiecti={subiecti} setSubiectulAles={setSubiectulAles} />
+      <ScapaJos subiecti={subiecti} subiectulAles={subiectulAles} setSubiectulAles={setSubiectulAles} />
       <TextInput
         style={styles.textInput}
         multiline={true}
