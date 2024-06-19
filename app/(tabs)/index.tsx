@@ -26,10 +26,12 @@ const index = () => {
     'alt',
   ];
 
-  const salvațiTextul = () => {
-    console.log('text input:', text);
-    console.log('subiectulAles', subiectulAles);
-    // AsyncStorage.setItem('', text);
+  const salvațiTextul = async (): Promise<void> => {
+    const valueArray: string | null = await AsyncStorage.getItem(subiectulAles);
+    const currentArray: Array<string> = valueArray != null ? JSON.parse(valueArray) : [];
+    const newArray: Array<string> = [...currentArray, text];
+    await AsyncStorage.setItem(subiectulAles, JSON.stringify(newArray));
+    console.log('Updated array saved:', newArray);
   }
 
   return (
