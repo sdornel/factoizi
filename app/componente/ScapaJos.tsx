@@ -11,8 +11,9 @@ import {
 const ScapaJos = ({ subiecti, subiectulAles, setSubiectulAles }: { subiecti: Array<string>; subiectulAles: string; setSubiectulAles: Dispatch<SetStateAction<string>>; }) => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleSelect = (item) => {
+  const handleSelect = (item: string) => {
     // onValueChange(item.value);
+    setSubiectulAles(item);
     setIsVisible(false);
   };
 

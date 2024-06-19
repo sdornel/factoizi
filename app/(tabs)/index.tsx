@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GestureResponderEvent, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import 'expo-router/entry';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ScapaJos from '../componente/ScapaJos';
@@ -28,6 +28,7 @@ const index = () => {
 
   const salvațiTextul = () => {
     console.log('text input:', text);
+    console.log('subiectulAles', subiectulAles);
     // AsyncStorage.setItem('', text);
   }
 
