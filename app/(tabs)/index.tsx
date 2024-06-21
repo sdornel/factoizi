@@ -11,19 +11,6 @@ const index = () => {
     'programare',
     'istorie',
     'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
-    'alt',
   ];
 
   const salvațiTextul = async (): Promise<void> => {
