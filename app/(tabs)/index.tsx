@@ -30,12 +30,7 @@ const index = () => {
       >
         <Text style={styles.buttonText}>Înregistra</Text>
       </ Pressable>
-      {/* <TextInput
-        style={styles.textInput}
-        multiline={false}
-        onChangeText={setSubiect}
-        value={subiect}
-      /> */}
+      
       <ScapaJos subiecti={subiecti} subiectulAles={subiectulAles} setSubiectulAles={setSubiectulAles} />
       <TextInput
         style={styles.textInput}

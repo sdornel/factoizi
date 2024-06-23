@@ -12,7 +12,6 @@ const ScapaJos = ({ subiecti, subiectulAles, setSubiectulAles }: { subiecti: Arr
   const [isVisible, setIsVisible] = useState(false);
 
   const handleSelect = (item: string) => {
-    // onValueChange(item.value);
     setSubiectulAles(item);
     setIsVisible(false);
   };
