@@ -23,7 +23,7 @@ const ScapaJos = ({ subiecti, subiectulAles, setSubiectulAles }: { subiecti: Arr
         onPress={() => setIsVisible(true)}
       >
         <Text style={styles.dropdownButtonText}>
-          {subiectulAles ? subiectulAles : 'Selectati o optiune'}
+          {subiectulAles ? subiectulAles : 'Selectați o opțiune'}
         </Text>
       </TouchableOpacity>
       <Modal transparent={true} visible={isVisible} animationType="slide">
