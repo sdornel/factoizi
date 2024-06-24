@@ -26,7 +26,8 @@ const index = () => {
       <Text style={styles.label}>Scrieți Aici</Text>
       <Pressable
         onPress={(e) => salvațiTextul()}
-        style={styles.button}
+        style={subiectulAles && text ? styles.button : styles.buttonDisabled}
+        disabled={!subiectulAles && !text}
       >
         <Text style={styles.buttonText}>Înregistra</Text>
       </ Pressable>
@@ -68,6 +69,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignItems: 'center',
     marginTop: 10,
+  },
+  buttonDisabled: {
+    backgroundColor: 'gray',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
   },
   buttonText: {
     color: 'white',
