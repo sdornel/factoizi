@@ -3,7 +3,7 @@ import { Button, Pressable, StyleSheet, Text, View } from 'react-native';
 import { RootStackParamList } from '../types/types';
 import { Link, useNavigation } from 'expo-router';
 import Dosar from '../containere/Dosar';
-import { useRouter } from "expo-router";
+import { useRouter } from 'expo-router';
 
 const EcranDeNoteSalvate = () => {
   const navigation = useNavigation();
@@ -16,20 +16,25 @@ const EcranDeNoteSalvate = () => {
   return (
     // in future need to have a better format for containers
     <View style={styles.container}>
-      <Text>This is the saved notes screen.</Text>
+      <Text>Acesta este ecranul de note salvate.</Text>
       <Button
-        title="Programare"
-        onPress={() => naviga('Programare')}
+        title='Programare'
+        onPress={() => naviga('programare')}
       />
       <View style={styles.distanțier}></View>
       <Button
-        title="Go to Dosar with Note2"
-        onPress={() => naviga('Note2')}
+        title='Istorie'
+        onPress={() => naviga('istorie')}
       />
       <View style={styles.distanțier}></View>
       <Button
-        title="Go to Dosar with Note3"
-        onPress={() => naviga('Note3')}
+        title='Limbi'
+        onPress={() => naviga('limbi')}
+      />
+            <View style={styles.distanțier}></View>
+      <Button
+        title='Alt'
+        onPress={() => naviga('alt')}
       />
     </View>
   );
