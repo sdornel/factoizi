@@ -10,6 +10,7 @@ const index = () => {
   const subiecti = [
     'programare',
     'istorie',
+    'limbi',
     'alt',
   ];
 
