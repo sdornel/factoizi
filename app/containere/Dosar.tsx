@@ -27,7 +27,7 @@ const Dosar = () => {
     <View style={styles.container}>
       <Text>Detail Screen for {subiect}</Text>
       {
-        // AsyncStorage.subiect
+        // AsyncStorage.subiect loop
       }
       <Nota props={''}/>
     </View>
