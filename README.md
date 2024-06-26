@@ -3,7 +3,7 @@ In aceastǎ applicație creez abilitate sǎ scrie lucruri interesant.
 nu uit sǎ creezi o optiune sǎ înregistra facturile
 creezi o optiune sǎ vǎd istoria
 
-add dropdown
+I made this app because I want to write down random notes on my phone that I can look up later. This is for short term type stuff.
 
 # Welcome to your Expo app 👋
 
