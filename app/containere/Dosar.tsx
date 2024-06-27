@@ -28,6 +28,12 @@ const Dosar = () => {
       <Text>Detail Screen for {subiect}</Text>
       {
         // AsyncStorage.subiect loop
+        dataArray.map((val, i) => {
+          console.log('val', val);
+          return (
+            <p>hi</p>
+          )
+        })
       }
       <Nota props={''}/>
     </View>
