@@ -20,6 +20,7 @@ const index = () => {
     const newArray: Array<string> = [...currentArray, text];
     await AsyncStorage.setItem(subiectulAles, JSON.stringify(newArray));
     console.log('Updated array saved:', newArray);
+    setText('');
   }
 
   return (
