@@ -26,16 +26,15 @@ const Dosar = () => {
   return (
     <View style={styles.container}>
       <Text>Detail Screen for {subiect}</Text>
+      <View style={styles.spacer}/>
       {
         // AsyncStorage.subiect loop
         dataArray.map((val, i) => {
-          console.log('val', val);
           return (
-            <p>hi</p>
+            <Nota value={val} key={i}/>
           )
         })
       }
-      <Nota props={''}/>
     </View>
   );
 };
@@ -45,6 +44,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  spacer: {
+    height: 20,
+  },
+  padder: {
+    paddingLeft: 30,
+    paddingRight: 30,
   },
 });
 
