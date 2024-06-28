@@ -6,7 +6,6 @@ import Dosar from '../containere/Dosar';
 import { useRouter } from 'expo-router';
 
 const EcranDeNoteSalvate = () => {
-  const navigation = useNavigation();
   const router = useRouter();
 
   const naviga = (subiect: string) => {

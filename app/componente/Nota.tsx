@@ -4,17 +4,24 @@ import { StyleSheet, Text, View } from 'react-native';
 const Nota = (props: { value: string; key: number; }) => {
 
   return (
-      <View style={styles.padder}>
         <Text>{props.value}</Text>
-      </View>
     );
   };
   
 
 const styles = StyleSheet.create({
-  padder: {
-    paddingLeft: 30,
-    paddingRight: 30,
+  card: {
+    padding: 20,
+    margin: 10,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 10,
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 2,
   },
 });
 
