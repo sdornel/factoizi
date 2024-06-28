@@ -30,7 +30,7 @@ const EcranDeNoteSalvate = () => {
         title='Limbi'
         onPress={() => naviga('limbi')}
       />
-            <View style={styles.distanțier}></View>
+      <View style={styles.distanțier}></View>
       <Button
         title='Alt'
         onPress={() => naviga('alt')}
