@@ -1,8 +1,5 @@
 import React from 'react';
 import { Button, Pressable, StyleSheet, Text, View } from 'react-native';
-import { RootStackParamList } from '../types/types';
-import { Link, useNavigation } from 'expo-router';
-import Dosar from '../containere/Dosar';
 import { useRouter } from 'expo-router';
 
 const EcranDeNoteSalvate = () => {
