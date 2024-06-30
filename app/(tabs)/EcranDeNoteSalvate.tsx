@@ -10,7 +10,6 @@ const EcranDeNoteSalvate = () => {
   };
 
   return (
-    // in future need to have a better format for containers
     <View style={styles.container}>
       <Text>Acesta este ecranul de note salvate.</Text>
       <Button
