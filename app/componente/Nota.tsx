@@ -4,7 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 const Nota = (props: { value: string; key: number; }) => {
 
   return (
-        <Text>{props.value}</Text>
+    <View>
+      <Text>{props.value}</Text>
+      butonul pentru ștergere aici in rosu
+    </View>
     );
   };
   
