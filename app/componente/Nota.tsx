@@ -1,12 +1,14 @@
 import { useNavigation } from 'expo-router';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 
 const Nota = (props: { value: string; key: number; }) => {
 
   return (
     <View>
       <Text>{props.value}</Text>
-      butonul pentru ștergere aici in rosu
+      <Pressable>
+        Șterge
+      </Pressable>
     </View>
     );
   };
