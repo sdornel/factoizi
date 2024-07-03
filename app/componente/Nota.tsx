@@ -3,10 +3,17 @@ import { StyleSheet, Text, View, Pressable } from 'react-native';
 
 const Nota = (props: { value: string; key: number; }) => {
 
+  const sterge = () => {
+
+  };
+  
   return (
     <View>
       <Text>{props.value}</Text>
-      <Pressable>
+      <Pressable
+        onPress={(e) => sterge()}
+        style={styles.button}
+      >
         Șterge
       </Pressable>
     </View>
@@ -27,6 +34,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 5,
     elevation: 2,
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: 'center',
+    marginTop: 10,
   },
 });
 
