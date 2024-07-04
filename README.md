@@ -3,7 +3,6 @@ In aceastǎ applicație creez abilitate sǎ scrie lucruri interesant.
 I made this app because I want to write down random notes on my phone that I can look up later. This is for short term type stuff.
 
 nu uite sa vorbesti despre ASLR penetration
-adauge abilitatea sa sterge chesti
 
 # Welcome to your Expo app 👋
 
