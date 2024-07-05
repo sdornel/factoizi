@@ -4,14 +4,14 @@ import { StyleSheet, Text, View, Pressable } from 'react-native';
 const Nota = (props: { value: string; key: number; }) => {
 
   const sterge = () => {
-
+    // delete from async storage using key
   };
   
   return (
     <View>
       <Text>{props.value}</Text>
       <Pressable
-        onPress={(e) => sterge()}
+        onPress={() => sterge()}
         style={styles.button}
       >
         Șterge
