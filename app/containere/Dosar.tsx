@@ -25,8 +25,6 @@ const Dosar = () => {
   }, [subiect]);
 
   const sterge = async () => {
-    // delete from async storage using key
-    // AsyncStorage.removeItem(props.key)
     const accessedStorageArray: string | null = await AsyncStorage.getItem(subiect);
 
     if (accessedStorageArray !== null) {
