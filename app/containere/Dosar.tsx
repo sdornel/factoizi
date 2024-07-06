@@ -31,9 +31,10 @@ const Dosar = () => {
 
     if (accessedStorageArray !== null) {
       const convertedToJson: Array<string> = JSON.parse(accessedStorageArray);
-      convertedToJson.splice(convertedToJson.indexOf(arataText) - 1, 1);
-
+      convertedToJson.splice(convertedToJson.indexOf(arataText), 1);
+      debugger
       AsyncStorage.setItem(subiect, JSON.stringify(convertedToJson));
+      setDataArray(convertedToJson);
     }
   };
   
