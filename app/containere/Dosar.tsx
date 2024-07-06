@@ -23,6 +23,19 @@ const Dosar = () => {
 
     retrieveData();
   }, [subiect]);
+
+  const sterge = async () => {
+    // delete from async storage using key
+    // AsyncStorage.removeItem(props.key)
+    const accessedStorageArray: string | null = await AsyncStorage.getItem(subiect);
+
+    if (accessedStorageArray !== null) {
+      const convertedToJson: Array<string> = JSON.parse(accessedStorageArray);
+      convertedToJson.splice(convertedToJson.indexOf(arataText) - 1, 1);
+
+      AsyncStorage.setItem(subiect, JSON.stringify(convertedToJson));
+    }
+  };
   
   return (
     <View style={styles.container}>
@@ -41,7 +54,15 @@ const Dosar = () => {
               </Pressable>
               {
                 arataText === val &&
-                <Text style={styles.fullText}>{val}</Text>
+                <View>
+                  <Text style={styles.fullText}>{val}</Text>
+                    <Pressable
+                      onPress={() => sterge()}
+                      style={styles.button}
+                    >
+                    <Text>Șterge</Text>
+                  </Pressable>
+                </View>
               }
             </View>
           );
@@ -80,6 +101,20 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
     borderRadius: 10,
     backgroundColor: '#f9f9f9',
+  },
+  button: {
+    backgroundColor: '#fff',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: 'center',
+    marginTop: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 2,
+
   },
 });
 
