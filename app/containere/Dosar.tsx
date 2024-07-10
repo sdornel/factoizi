@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import { useRoute, useNavigation, NavigationProp, ParamListBase } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
+import { NativeStackNavigationProp } from 'react-native-screens/lib/typescript/native-stack/types';
 
 const Dosar = () => {
   const route = useRoute();
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   
   const { subiect } = route.params as { subiect: string; };
 
@@ -30,15 +31,23 @@ const Dosar = () => {
     if (accessedStorageArray !== null) {
       const convertedToJson: Array<string> = JSON.parse(accessedStorageArray);
       convertedToJson.splice(convertedToJson.indexOf(arataText), 1);
-      debugger
-      AsyncStorage.setItem(subiect, JSON.stringify(convertedToJson));
+
+      await AsyncStorage.setItem(subiect, JSON.stringify(convertedToJson));
       setDataArray(convertedToJson);
+      setArataText(''); // clear text on delete
     }
   };
   
   return (
     <View style={styles.container}>
-      <Text>Detail Screen for {subiect}</Text>
+      <Pressable
+        onPress={() => navigation.navigate('EcranDeNoteSalvate')}
+        style={styles.button}
+      >
+        <Text>Intoarce-te</Text>
+      </Pressable>
+      <View style={styles.spacer}></View>
+      <Text>ecran de detaliu pentru {subiect}</Text>
       <View style={styles.spacer} />
       {
         dataArray.map((val, i) => {
